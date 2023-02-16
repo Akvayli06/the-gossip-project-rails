@@ -1,10 +1,10 @@
- <section class="jumbotron text-center">
+<section class="jumbotron text-center">
  <div class="container">
           <h1 class="jumbotron-heading">Notre joli site de Potins</h1>
           <h2 class="lead text-muted">welcome <%= @name %> ! Ici c'est notre super site de potins, il est chouette, non ?</h2>
           <p>
             <a href="<%= new_gossip_path %>" class="btn btn-success my-2">Créer un potin</a>
-            
+            <%# <a href="<%= city_path %>" class="btn btn-success my-2">afficher la ville</a> %>
           </p>
         </div>
  </section>
@@ -26,7 +26,7 @@
            <div class="btn-group" >
               <button><a type="button" href="<%= gossip_path(gossip.id) %>" class="btn btn-sm btn-success">voir</a></button>
               <button><a type="button" href="<%= edit_gossip_path(gossip.id) %>" class="btn btn-sm btn-primary">editer</a></button>
-              <button><a type="button" href="<%= welcome_path(gossip.id) %>" class="btn btn-sm btn-danger" data-confirm="etes vous sur" data-methode="DELETE">suprimer</a></button>
+              <button><a type="button" href="<%= salut_path(gossip.id) %>" class="btn btn-sm btn-danger" data-confirm="etes vous sur" data-methode="DELETE">suprimer</a></button>
            </div>
        </div>
        </div>

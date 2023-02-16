@@ -1,4 +1,4 @@
 class WelcomeController < ApplicationController
-    def salut
+    def index
     end
 end
