@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :gossips
   resources :cities
   resources :users
+  resources :sessions
   
   # get '/salut', to: 'gossips#dynamique'
   # get '/team', to: 'team#team'

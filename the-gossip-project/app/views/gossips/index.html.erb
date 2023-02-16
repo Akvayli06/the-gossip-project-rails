@@ -26,7 +26,7 @@
            <div class="btn-group" >
               <button><a type="button" href="<%= gossip_path(gossip.id) %>" class="btn btn-sm btn-success">voir</a></button>
               <button><a type="button" href="<%= edit_gossip_path(gossip.id) %>" class="btn btn-sm btn-primary">editer</a></button>
-              <button><a type="button" href="<%= welcome_path(gossip.id) %>" class="btn btn-sm btn-danger" data-confirm="etes vous sur" data-methode="DELETE">suprimer</a></button>
+              <button><a type="button" <%= welcome_path(gossip.id) %> class="btn btn-sm btn-danger" >suprimer</a></button>
            </div>
        </div>
        </div>

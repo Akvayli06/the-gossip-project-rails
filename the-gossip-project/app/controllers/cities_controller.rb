@@ -1,4 +1,4 @@
-class GossipsController < ApplicationController
+class CitiesController < ApplicationController
     def index
       @cities = City.all
         # Méthode qui récupère tous les potins et les envoie à la view index (index.html.erb) pour affichage
