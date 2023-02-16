@@ -11,7 +11,7 @@ class UsersController < ApplicationController
     end
   
     def create
-      @user = User.create(user_params).save(validate: false)
+      user = User.create(user_params).save(validate: false)
 
       
       redirect_to welcome_path
